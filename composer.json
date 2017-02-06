@@ -1,5 +1,5 @@
 {
-  "name" : "thomseddon/cakephp-oauth-server",
+  "name" : "joesong/cakephp-oauth-server",
   "description" : "CakePHP OAuth2 Server Plugin",
   "type" : "cakephp-plugin",
   "authors" : [{
@@ -16,7 +16,7 @@
     "oauth",
     "server"
   ],
-  "homepage" : "https://github.com/thomseddon/cakephp-oauth-server",
+  "homepage" : "https://github.com/JoeSong/cakephp-oauth-server",
   "license" : [
     "MIT"
   ],
