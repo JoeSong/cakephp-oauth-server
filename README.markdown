@@ -112,7 +112,7 @@ This plugin ships with all required models, including the "Clients" model for ad
 You may wish to handle adding clients yourself, see the tables.sql for the schema, or you can use the convenience method included in the model, like so:
 
 ```PHP
-$client = $this->OAuth->Client->add('http://www.return_url.com')
+$client = $this->OAuth->OAuthServerClient->add('http://www.return_url.com')
 ```
 Which will generate then client_id and client_secret and return something like:
 
@@ -124,9 +124,9 @@ Array(
 )
 ```
 
-The method includes various schemes for generating client id's, [pick your favourite](https://github.com/thomseddon/cakephp-oauth-server/blob/master/Model/Client.php#L122).
+The method includes various schemes for generating client id's, [pick your favourite](https://github.com/thomseddon/cakephp-oauth-server/blob/master/Model/OAuthServerClient.php#L122).
 
-**NOTE:** This convenience method will generate a random client secret __and hash it__ for security before storage. Although it will pass back the actual raw client secret when you first add a new client, it is not possible to ever determine this from the hash stored in the database. So if the client forgets their secret, [a new one will have to be issued](https://github.com/thomseddon/cakephp-oauth-server/blob/master/Model/Client.php#L139).
+**NOTE:** This convenience method will generate a random client secret __and hash it__ for security before storage. Although it will pass back the actual raw client secret when you first add a new client, it is not possible to ever determine this from the hash stored in the database. So if the client forgets their secret, [a new one will have to be issued](https://github.com/thomseddon/cakephp-oauth-server/blob/master/Model/OAuthServerClient.php#L139).
 
 
 ### Included Endpoints
